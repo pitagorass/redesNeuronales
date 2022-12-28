@@ -1,0 +1,4 @@
+La neurona: Una pequeña y poderosa herramienta
+
+Arquitectura de una red neuronal
+
