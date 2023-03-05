@@ -4,10 +4,25 @@ from keras.utils import to_categorical
 from keras.datasets import mnist
 import matplotlib.pyplot as plt
 
+""" Cargamos nuestro set de datos
+
+train_data = Datos de entrenamiento:
+  Es un arreglo con 6000 imagenes en cada posicion, tiene imagenes 28*28
+  train_data[1]: seleccionamos el primer ejemplo de esos 6000 mil tendremos un arreglo
+  con numeros del 0 al 255 por que esa es la nomenclatura de las imagenes tanto para
+  rgb como para escala de grises.
+
+train_labels = Labels de entrenamiento
+
+test_data = Data de test
+test_labels = Labels de test
+
+Esto viene de mnist descarga la informacion de keras
+ """
 (train_data, train_labels), (test_data, test_labels) = mnist.load_data()
 train_data.shape
 train_data[1]
-plt.imshow(train_data[1])
+plt.imshow(train_data[2])
 train_labels[1]
 
 model = models.Sequential()
